@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BagBog</title>
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/sweetalert/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../css/pages/registrarse.css" />
+</head>
+
+<body>
+    <!-- Login -->
+    <div class="container-fluid">
+        <div class="row mt-4 mb-4">
+            <div class="col-md-8 mx-auto">
+                <form class="card form-control form-box" action="">
+                    <div class="row mb-3 mt-3">
+                        <a class="col-md-1" href="../index.html"><i
+                                class="fa-solid fa-circle-chevron-left fa-lg btn_icon"></i></a>
+                        <h2 class="col-md-10">Registrarse</h2>
+                    </div>
+                    <div class="row p-2 mb-1">
+                        <div class="col-md-6">
+                            <div class=" form-outline text-white">
+                                <label class="form-label" for="nombre1">Primer Nombre</label>
+                                <input type="text" id="nombre1" class="text-white form-control bg-transparent"
+                                    autocomplete="off" onkeypress="validarCaracteres(event), eliminarEspacios(event)" maxlength="15"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-outline text-white">
+                                <label class="form-label" for="nombre2">Segundo Nombre (Opcional)</label>
+                                <input type="text" id="nombre2" class="text-white form-control bg-transparent"
+                                    autocomplete="off" onkeypress="validarCaracteres(event), eliminarEspacios(event)" maxlength="15"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border col-md-11 mx-auto">
+
+                    <div class="row p-2 mb-1">
+                        <div class="col-md-6">
+                            <div class=" form-outline text-white">
+                                <label class="form-label" for="apellido1">Primer Apellido</label>
+                                <input type="text" id="apellido1" class="text-white form-control bg-transparent"
+                                    autocomplete="off" onkeypress="validarCaracteres(event), eliminarEspacios(event)" maxlength="15"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-outline text-white">
+                                <label class="form-label" for="apellido2">Segundo Apellido</label>
+                                <input type="text" id="apellido2" class="text-white form-control bg-transparent"
+                                    autocomplete="off" onkeypress="validarCaracteres(event), eliminarEspacios(event)" maxlength="15"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border col-md-11 mx-auto">
+
+                    <div class="row p-2 mb-1">
+                        <div class="col-md-1">
+                            <div class=" form-outline text-white">
+                                <label class="form-label" for="edad">Edad</label>
+                                <input type="text" id="edad" class="text-white form-control bg-transparent"
+                                    autocomplete="off" onkeypress="validarNumeros(event)" maxlength="2"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-outline text-white">
+                                <label class="form-label" for="genero">Genero</label>
+                                <select class="text-white form-select bg-transparent" id="genero">
+                                    <option class="bg-dark" value="0" selected>Seleccione</option>
+                                    <option class="bg-dark" value="1">Masculino</option>
+                                    <option class="bg-dark" value="2">Femenino</option>
+                                    <option class="bg-dark" value="3">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-outline text-white">
+                                <label class="form-label" for="tipo_documento">Tipo De Documento</label>
+                                <select class="text-white form-select bg-transparent" id="tipo_documento">
+                                    <option class="bg-dark" value="0" selected>Seleccione</option>
+                                    <option class="bg-dark" value="1">Tarjeta De Identidad</option>
+                                    <option class="bg-dark" value="2">Cedula De Ciudadanía</option>
+                                    <option class="bg-dark" value="3">Cedula De Extranjería</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class=" form-outline text-white">
+                                <label class="form-label" for="numero_documento">Número De Documento</label>
+                                <input type="text" id="numero_documento"
+                                    class="text-white form-control bg-transparent" autocomplete="off" onkeypress="validarNumeros(event)" maxlength="18"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border col-md-11 mx-auto">
+
+                    <div class="row p-2 mb-1">
+                        <div class="col-md-7">
+                            <div class=" form-outline text-white">
+                                <label class="form-label" for="correo">Correo Electrónico</label>
+                                <input type="text" id="correo" class="text-white form-control bg-transparent"
+                                    autocomplete="off" maxlength="40"/>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-outline text-white">
+                                <label class="form-label" for="direccion">Dirección</label>
+                                <input type="text" id="direccion" class="text-white form-control bg-transparent"
+                                    autocomplete="off" maxlength="40"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-2 mb-1">
+                        <div class="col-md-6">
+                            <div class="form-outline text-white">
+                                <label class="form-label" for="contraseña">Contraseña</label>
+                                <div class="input-group">
+                                    <input type="password" id="contraseña"
+                                        class="text-white form-control bg-transparent" autocomplete="off"/>
+                                    <span id="btn_mostrarContraseña" class="input-group-text bg-transparent text-white btn_icon" onclick="mostrarContrasena('contraseña','icon_mostrarContraseña1')">
+                                        <i id="icon_mostrarContraseña1" class="fa regular fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-outline text-white">
+                                <label class="form-label" for="confirmar_contraseña">Confirmar Contraseña</label>
+                                <div class="input-group">
+                                    <input type="password" id="confirmar_contraseña"
+                                        class="text-white form-control bg-transparent" autocomplete="off"/>
+                                    <span id="btn_mostrarConfirmarContraseña" class="input-group-text bg-transparent text-white btn_icon" onclick="mostrarContrasena('confirmar_contraseña','icon_mostrarContraseña2')">
+                                        <i id="icon_mostrarContraseña2" class="fa regular fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="border col-md-11 mx-auto">
+
+                    <div class="row p-2 mb-1">
+                        <a class="col-md-6 btn btn-outline-light mx-auto mt-1" onclick="btn_crearUsuario()">Registrarse</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/all.min.js"></script>
+    <script type="text/javascript" src="../js/sweetalert/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="../js/pages/registrarse.js"></script>
+</body>
+
+</html>

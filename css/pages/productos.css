@@ -1,0 +1,62 @@
+.carousel-control-prev-icon{
+    filter: grayscale(1) !important;
+}
+
+.carousel-control-next-icon{
+    filter: grayscale(1) !important;
+}
+
+.btn_controls_carousel{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.icon_shopping{
+    color: #ffffff;
+}
+
+.btn_icon_shopping{
+    padding-top: 9px;
+    border: none !important;
+}
+
+.btn_icon_shopping:hover{
+    background-color: #535353 !important;
+}
+
+.sidebar_productos {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.images_productos {
+    width: 414px;
+    height: 517px;
+    margin: auto;
+}
+
+footer {
+    position: absolute;
+    margin-top: 20% !important;
+}
+
+@media(min-width: 1400px){
+    footer {
+        position: absolute;
+        margin-top: 0% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        position: absolute;
+        margin-top: 70% !important;
+        background-size: cover !important;
+    }
+}
+
+.sombras {
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+}

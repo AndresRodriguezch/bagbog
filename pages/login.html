@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BagBog</title>
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/sweetalert/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../css/pages/login.css" />
+</head>
+
+<body>
+    <!-- Login -->
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <a href="../index.html"><i class="fa-solid fa-circle-chevron-left fa-lg btn_icon_back"></i></a>
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <input id="txt_email" type="text" required autocomplete="off">
+                        <label for="">Correo Electronico</label>
+                    </div>
+                    <div class="inputbox">
+                        <input id="txt_password" type="password" required autocomplete="off">
+                        <label for="">Contraseña</label>
+                        <i id="icon_mostrarContraseña" class="fa regular fa-eye-slash btn_icon"
+                            onclick="mostrarContrasena()"></i>
+                    </div>
+                    <a class="btn btn-outline-light mt-4 btn-ingresar" onclick="btn_ingresar()">Ingresar</a>
+                    <div class="row mx-auto mt-4">
+                        <span class="text-white">¿No tienes una cuenta? <a class="text-reset" href="registrarse.html">Regístrate aquí</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/all.min.js"></script>
+    <script type="text/javascript" src="../js/sweetalert/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="../js/pages/login.js"></script>
+</body>
+
+</html>

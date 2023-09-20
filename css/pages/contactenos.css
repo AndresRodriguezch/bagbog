@@ -1,0 +1,36 @@
+#contenedor-info {
+    border-bottom: none;
+    border-right: 3px solid #DEE2E6;
+}
+
+.icon-color {
+    color: #496F9E;
+}
+
+.contador_caracteres {
+    font-size: 12px;
+    text-align: end;
+}
+
+@media(min-width: 1300px){
+    footer {
+        position: absolute;
+        margin-top: 0% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    #contenedor-info {
+        border-right: none;
+        border-bottom: 3px solid #DEE2E6;
+        margin-bottom: 20px;
+    }
+
+    #contenedor-datos {
+        text-align: center;
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BagBog</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/toastify/toastify.min.css">
+    <link rel="stylesheet" href="../css/pages/styles.css">
+    <link rel="stylesheet" href="../css/pages/productos.css">
+</head>
+
+<body class="vh-100">
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent ">
+            <div class="container">
+                <a class="navbar-brand fs-4" href="#">BagBog</a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <!-- sidebar Header -->
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <!-- sidebar Body -->
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                            </li>
+                        </ul>
+                        <!-- login -->
+                        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                            <a class="text-white text-decoration-none px-3 py-1 btn_general rounded-4"
+                                href="login.html">Login</a>
+                            <a class="text-white text-decoration-none px-3 py-1 btn_general rounded-4"
+                                href="registrarse.html">Registrarse</a>
+                            <div>
+                                <button class="btn_icon_shopping btn btn-outline-light ps-0 text-center" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                                    aria-controls="staticBackdrop">
+                                    <span id="contadorCompra" style="position: sticky; margin-right: 7px;"
+                                        class="top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                    <i class="fa-solid fa-cart-shopping position-relative f-5 icon_shopping me-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Offcanvas Productos -->
+        <div class="offcanvas offcanvas-end navbar-collapse sidebar_productos text-white" data-bs-scroll="true"
+            data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header w-100 border-bottom border-90">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">Productos</h5>
+                <button type="button" class="btn-close btn-close-white shadow-none " data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div id="cardCompras" class="offcanvas-body">
+                
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <main class="d-block row">
+            <section class="w-100 vh-100 d-block mx-auto mt-3">
+                <!-- Carousel wrapper -->
+                <div id="carouselProductos" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+                    <!-- Controls -->
+                    <div class="d-flex justify-content-center mb-1">
+                        <button class="carousel-control-prev position-relative" type="button"
+                            data-bs-target="#carouselProductos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon btn_controls_carousel" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next position-relative" type="button"
+                            data-bs-target="#carouselProductos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- Inner -->
+                    <div id="productos" class="carousel-inner py-4">
+
+                    </div>
+                    <!-- Inner -->
+                </div>
+                <!-- Carousel wrapper -->
+
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <div class="row">
+            <footer class="bg-dark text-white">
+                <div class="container p-3 pb-0 text-center">
+                    <!-- Redes -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1 icon_facebook" href="#" role="button"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- WhatsApp -->
+                        <a class="btn btn-outline-light btn-floating m-1 icon_whatsapp" href="#" role="button"><i
+                                class="fab fa-whatsapp"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1 icon_x_twitter" href="#" role="button"><i
+                                class="fab fa-x-twitter"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1 icon_instagram" href="#" role="button"><i
+                                class="fab fa-instagram"></i></a>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="pages/productos.html">Productos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <span id="contadorCompra" style="position: sticky; margin-right: 7px;" class="top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                        <i class="fa-solid fa-cart-shopping position-relative f-3 fa-bounce"></i>
+                    </div>
+                </div>               
+            </nav>
+        </div>
+
+        <div id="row_card" class="row mt-2 mx-auto">
+                
+        </div>
+
+    </div> -->
+
+
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../js/all.min.js"></script>
+    <script type="text/javascript" src="../js/toastify/toastify.js"></script>
+    <script type="text/javascript" src="../js/pages/productos.js"></script>
+</body>
+
+</html>

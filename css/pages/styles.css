@@ -1,0 +1,123 @@
+body {
+    background: url('../../images/bg-1.png') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sombra {
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn_general {
+    background-color: #6A3B41;
+}
+
+.btn_general:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    background-color: #311619;
+}
+
+.titulo_texto_inicio {
+    font-weight: bold;
+    color: #BB9015;
+    animation: mover_izquierda_derecha 3s;
+}
+
+.descripcion_texto_inicio {
+    font-size: 20px;
+
+    animation: mover_izquierda_derecha 3s;
+}
+
+.titulo_texto_final {
+    font-weight: bold;
+    color: #BB9015;
+    animation: mover_derecha_izquierda 3s;
+}
+
+.descripcion_texto_final {
+    font-size: 20px;
+
+    animation: mover_derecha_izquierda 3s;
+}
+
+.icon_facebook:hover {
+    background-color: #0087D5;
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+.icon_whatsapp:hover {
+    background-color: #25D366;
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+.icon_x_twitter{
+    transition: 0.8s;
+}
+
+.icon_instagram:hover {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(232deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: #ffffff;
+}
+
+.sombras {
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+@keyframes mover_izquierda_derecha {
+    from {
+        transform: translate(-100px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+@keyframes mover_derecha_izquierda {
+    from {
+        transform: translate(100px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+    body {
+        background-size: inherit !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        position: absolute;
+        margin-top: 100% !important;
+        background-size: cover !important;
+    }
+}

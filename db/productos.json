@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre" : "Morral Universitario (Negro)",
+        "descripcion" : [
+            "Ergonomico con porta PC",
+            "Impermeable",
+            "Versatilidad"
+        ],
+        "valor" : 100000,
+        "imagen": "../images/producto1.png"
+    },
+    {
+        "id": 2,
+        "nombre" : "Morral Universitario (Vino Tinto)",
+        "descripcion" : [
+            "Amplio espacio de almacenamiento",
+            "Impermeable",
+            "Estilo elegante"
+        ],
+        "valor" : 250000,
+        "imagen": "../images/producto2.png"
+    },
+    {
+        "id": 3,
+        "nombre" : "Morral Viajero (Selva)",
+        "descripcion" : [
+            "Capacidad adecuada",
+            "Material duradero e impermeable",
+            "Estilo y diseño"
+        ],
+        "valor" : 250000,
+        "imagen": "../images/producto3.png"
+    },
+    {
+        "id": 4,
+        "nombre" : "Morral Viajero (Nieve)",
+        "descripcion" : [
+            "Capacidad adecuada",
+            "Aislamiento térmico"
+        ],
+        "valor" : 250000,
+        "imagen": "../images/producto4.png"
+    },
+    {
+        "id": 5,
+        "nombre" : "Bolso (Blanco)",
+        "descripcion" : [
+            "Versatilidad",
+            "Ergonomico"
+        ],
+        "valor" : 250000,
+        "imagen": "../images/producto5.png"
+    },
+    {
+        "id": 6,
+        "nombre" : "Mochila (Blanco)",
+        "descripcion" : [
+            "Diseño minimalista",
+            "Versatilidad"
+        ],
+        "valor" : 250000,
+        "imagen": "../images/producto6.png"
+    }
+]
